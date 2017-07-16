@@ -3,8 +3,8 @@
 #include <math.h>
 #include <conio.h>
 
-#pragma warning(disable:4996)
-
+//#pragma warning(disable:4996)
+//created by Arya HajiTaheri
 #define E  pow(10,-3)
 #define ERROR 0.000001
 #define MAXT 1.0
