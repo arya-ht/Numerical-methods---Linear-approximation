@@ -16,7 +16,7 @@
 double Newton(double,double);
 
 int main() {
-	double t=0.0, un = 1.0, dt = 0.01, un1, tempun1;
+	double t=0.0, un = 1.0, dt = 0.01, un1;
 
 	for (t; t <= MAXT; t += dt) {
 		un1 = Newton(t, un); + dt*FD(t, Newton(t, un));
