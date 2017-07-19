@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-
-//#pragma warning(disable:4996)
-// Created by Arya HajiTaheri
+/*
+ *created by Arya HajiTaheri
+ */
 #define maxT 2
 #define F(t,u) (pow(t,3)*u-1.5*u) // put your function here
 
