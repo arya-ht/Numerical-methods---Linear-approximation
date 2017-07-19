@@ -2,8 +2,9 @@
 #include<conio.h>
 #include<math.h>
 #include <stdlib.h>
-//#pragma warning(disable:4996) 
-
+/*
+ *created by Arya HajiTaheri
+ */
 #define CE 2.71828 // constant e
 #define F(x) (pow(CE,-x)-x) // your function goes here
 #define FD(x) ((-1*pow(CE,-x))-x) // your derivative goes here
