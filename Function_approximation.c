@@ -13,7 +13,7 @@ double Euler();
 double midpoint();
 void print();
 
-int main() {
+int main(void) {
 	print();
 	return 0;
 }
