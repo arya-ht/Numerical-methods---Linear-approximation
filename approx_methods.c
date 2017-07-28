@@ -13,7 +13,7 @@
 double Newton();
 double Bisection();
 
-int main() {
+int main(void) {
 	Newton();
 	Bisection();
 	return 0;
