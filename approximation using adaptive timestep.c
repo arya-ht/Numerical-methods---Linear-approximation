@@ -15,7 +15,7 @@
 
 double Newton(double,double);
 
-int main() {
+int main(void) {
 	double t=0.0, un = 1.0, dt = 0.01, un1;
 
 	for (t; t <= MAXT; t += dt) {
@@ -28,7 +28,7 @@ int main() {
 	}
 
 	// output is near 15.87
-	system("pause");
+	//system("pause");
 	return 0;
 }
 double  Newton(double t, double u) {
