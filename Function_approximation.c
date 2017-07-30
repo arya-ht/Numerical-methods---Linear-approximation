@@ -22,7 +22,7 @@ void print() {
 	printf("\nEuler: %lf\n\nMidpoint: %lf\n\nRunge-Kutta: %lf\n\nFourth-order Runge-Kutta: %lf\n\n", Euler(), midpoint(), RK(), heun());
 	//system("pause");
 }
-double Euler() {
+double Euler() { //uses Eurler method
 	double  t = 0.0, un = 1, tn = 0.0, dt = 0.01, un1;
 
 	for (t = 0.0; t <= maxT; t += dt) {
@@ -31,7 +31,7 @@ double Euler() {
 	}
 	return un1;
 }
-double midpoint() {
+double midpoint() { //uses midpoint rule
 	double  t = 0.0, un = 1, tn = 0.0, dt = 0.01, un1;
 	for (t = 0.0; t <= maxT + dt; t += dt) {
 		un1 = un + dt*F(t + 0.5*dt, un + 0.5*dt*F(t, un));
@@ -39,7 +39,7 @@ double midpoint() {
 	}
 	return un1;
 }
-double heun() {
+double heun() { //uses hens method
 	double  t = 0.0, un = 1, tn = 0.0, dt = 0.01, ustar, un1;
 
 	for (t = 0.0; t <= maxT + dt; t += dt) {
@@ -50,7 +50,7 @@ double heun() {
 	return un1;
 }
 
-double RK() {
+double RK() { // uses Runge-Kutta fourth order
 	double  t = 0.0, un = 1, tn = 0.0, dt = 0.01, ustar, udstar, un1;
 
 	for (t = 0.0; t <= maxT + dt; t += dt) {
